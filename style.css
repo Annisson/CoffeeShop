@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100vh;
+    position: relative;
+
+}
+
+body {
+    background-color: #D5C5C8;
+    margin-bottom: 60px;
+}
+
+.logo img{
+    margin-right: 10px;
+    max-height: 50px;
+    max-width: auto;
+}
+
+.navbar {
+    background-color: #604D53;
+}
+
+.container-fluid#foot{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+footer {
+    background-color: #604D53;
+    bottom: 0;
+    position: absolute;
+    width: 100vw;
+}
