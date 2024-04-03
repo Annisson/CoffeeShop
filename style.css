@@ -22,6 +22,7 @@ body {
 
 .navbar {
     background-color: #604D53;
+    width: 100vw;
 }
 
 .container-fluid#foot{
