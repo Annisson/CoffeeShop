@@ -14,6 +14,10 @@ body {
     margin-bottom: 60px;
 }
 
+.content-container {
+    padding: 3rem;
+}
+
 .logo img{
     margin-right: 10px;
     max-height: 50px;
@@ -22,10 +26,16 @@ body {
 
 .navbar {
     background-color: #604D53;
+    padding: 1rem;
+    padding-left: 3rem;
     width: 100vw;
 }
 
-.container-fluid#foot{
+#nav {
+    justify-content: flex-start !important;
+}
+
+.container-fluid#foot {
     padding-left: 0;
     padding-right: 0;
 }
@@ -36,3 +46,61 @@ footer {
     position: absolute;
     width: 100vw;
 }
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .content-container {
+        padding: 2rem;
+    }
+
+    .navbar {
+        padding: 1rem;
+    }
+
+    #nav {
+        justify-content: center !important;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+
+    }
+
+    .nav-item {
+        margin-bottom: .5rem;
+        padding: 0 1em;
+    }
+
+    .logo img{
+        max-width: 20%;
+        padding-right: 0.25rem;
+    }
+
+    .row-cols-md-2 > * {
+        flex: 0 0 100%; /* Force each item to take up the full row */
+        max-width: 100%; /* Ensure items occupy the full width */
+      }
+    
+    #copy-text {
+        padding: 0.65rem;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+    .nav-item {
+        padding: 0 1em;
+    }
+
+    .row-cols-md-2 > * {
+        flex: 0 0 100%; /* Force each item to take up the full row */
+        max-width: 100%; /* Ensure items occupy the full width */
+      }
+}
+
+
+
